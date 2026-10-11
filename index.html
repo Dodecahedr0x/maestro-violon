@@ -355,7 +355,7 @@ function drawStaff(ks) {
     g += `<g class="slot ${set ? 'set' : 'ghost'}" data-k="${k + 1}">
       <title>${k + 1} ${ksType === 'sharp' ? 'dièse' : 'bémol'}${k ? 's' : ''}</title>
       <rect x="${x - 11}" y="4" width="22" height="76" fill="transparent"/>
-      <text x="${x}" y="${y + (ksType === 'sharp' ? 7 : 4)}" text-anchor="middle" font-family="'Noto Music'" font-size="24" fill="${set ? 'var(--accent)' : 'var(--ink)'}">${glyph}</text>
+      <text x="${x}" y="${y + (ksType === 'sharp' ? 3.5 : 4)}" text-anchor="middle" font-family="'Noto Music'" font-size="24" fill="${set ? 'var(--accent)' : 'var(--ink)'}">${glyph}</text>
     </g>`;
   });
   document.getElementById('staff').innerHTML = g;
